@@ -1,0 +1,25 @@
+npm is just like playstore of apps -> just like in playstore we have access to various applications that are created by some other developers -> similarly npm gives us packages or code that is written by other developers
+in other words npm is defined as a tool that manages and install all the dependencies that is required in out application
+
+package.json gives us an overview of what this application is all about -> just like an index of a book
+In package.json --> "main" represents the entry point to our application
+
+npm is open source but it does not means that it is free for production also.. depending upon the licence we have to pay to the author for his copyrights
+
+package-lock.json --> in package-lock.json all the version of dependencies are declared which are present in node modules-> so the package-lock.json ensures that after cloning the repo user when user tries to install any dependency then system will check if that depency is present in package-lock ? install only that particular version : install latest version
+
+steps
+1.npm init
+2.npm install --save-dev jest
+3.write code in index and index.test.js
+4.replace "test":"jest" in package.json
+5.npm run test
+
+<!-- there are packages that are only imp for the developer then install it in developer dependencies using this flag  --save-dev -->
+<!-- there are packages that are imp for both the developer and the end user then install it in dependencies -->
+
+<!-- to run any specific file -> npm run test __tests__/test.js -->
+
+NOTE --> Shallow equal only checks values which are one level depper into the object but if there is an object inside an object then it cant compare and will return false
+
+Deep equal checks values upto the root level
